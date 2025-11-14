@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Cerdas Cacingan',
+  title: 'Poster - Cegah Cacingan Dengan CERDAS',
   description: 'Cegah Cacingan Dengan Cerdas - Aplikasi Edukasi Anak',
 };
 
