@@ -19,16 +19,16 @@ const transmissionMethods = [
     },
     {
         icon: <Bug className="h-16 w-16 text-primary" />,
-        title: "Dari Makanan",
-        modalTitle: "Jaga Makananmu!",
-        modalContent: "Makanan yang tidak bersih atau dihinggapi lalat bisa mengandung telur cacing."
+        title: "Dari Makanan/minuman",
+        modalTitle: "Jaga Jajananmu!",
+        modalContent: "Makanan atau minuman yang tidak bersih atau dihinggapi lalat bisa mengandung telur cacing."
     },
-    {
-        icon: <Bug className="h-16 w-16 text-primary" />,
-        title: "Dari Minuman",
-        modalTitle: "Jaga Minumanmu!",
-        modalContent: "Minuman yang tidak bersih atau dihinggapi lalat bisa mengandung telur cacing."
-    }
+    // {
+    //     icon: <Bug className="h-16 w-16 text-primary" />,
+    //     title: "Dari Minuman",
+    //     modalTitle: "Jaga Minumanmu!",
+    //     modalContent: "Minuman yang tidak bersih atau dihinggapi lalat bisa mengandung telur cacing."
+    // }
 ];
 
 export default function Scene3() {
@@ -38,7 +38,7 @@ export default function Scene3() {
                 Bagaimana Cacing Masuk?
             </h2>
             <p className="text-xl md:text-2xl font-bold text-white mb-4">Klik pada gambar untuk tahu caranya!</p>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
                 {transmissionMethods.map((method, index) => (
                     <InfoModal
                         key={index}
