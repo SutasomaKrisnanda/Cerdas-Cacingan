@@ -2,11 +2,11 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { InfoModal } from "@/components/InfoModal";
-import { HandSoap, Footprints, Bug } from "lucide-react";
+import { Hand, Footprints, Bug } from "lucide-react";
 
 const transmissionMethods = [
     {
-        icon: <HandSoap className="h-16 w-16 text-primary" />,
+        icon: <Hand className="h-16 w-16 text-primary" />,
         title: "Dari Tangan Kotor",
         modalTitle: "Tanganmu Penting!",
         modalContent: "Telur cacing yang kecil banget bisa menempel di tanganmu setelah main di tanah. Kalau tidak cuci tangan sebelum makan, telurnya bisa tertelan!"
