@@ -21,7 +21,7 @@ export default function Scene2() {
             <div className="flex flex-col md:flex-row gap-4 mt-4">
                 <InfoModal
                     trigger={
-                        <Button variant="accent" size="lg" className="rounded-full font-bold text-xl h-16 px-8 shadow-md hover:scale-105 transition-transform">
+                        <Button variant="ghost" size="lg" className="rounded-full font-bold text-xl h-16 px-8 shadow-md hover:scale-105 transition-transform">
                             <AlertTriangle className="mr-2 h-6 w-6" /> Kenapa Berbahaya?
                         </Button>
                     }
@@ -34,7 +34,7 @@ export default function Scene2() {
 
                 <InfoModal
                     trigger={
-                        <Button variant="accent" size="lg" className="rounded-full font-bold text-xl h-16 px-8 shadow-md hover:scale-105 transition-transform">
+                        <Button variant="ghost" size="lg" className="rounded-full font-bold text-xl h-16 px-8 shadow-md hover:scale-105 transition-transform">
                             <Sparkles className="mr-2 h-6 w-6" /> Fakta Unik!
                         </Button>
                     }
