@@ -1,3 +1,22 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "roundworm",
+      "description": "An image of a roundworm",
+      "imageUrl": "https://images.unsplash.com/photo-1619713138529-226efb6bd137?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b3JtJTIwcGFyYXNpdGV8ZW58MHx8fHwxNzYzMTAzMzcxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "worm parasite"
+    },
+    {
+      "id": "whipworm",
+      "description": "An image of a whipworm",
+      "imageUrl": "https://images.unsplash.com/photo-1568366791708-8bd03c76b246?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3b3JtJTIwcGFyYXNpdGV8ZW58MHx8fHwxNzYzMTAzMzcxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "worm parasite"
+    },
+    {
+      "id": "hookworm",
+      "description": "An image of a hookworm",
+      "imageUrl": "https://images.unsplash.com/photo-1747767899418-e4416f9bee98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8d29ybSUyMHBhcmFzaXRlfGVufDB8fHx8MTc2MzEwMzM3MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "worm parasite"
+    }
+  ]
 }

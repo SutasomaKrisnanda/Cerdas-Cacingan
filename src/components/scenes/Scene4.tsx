@@ -1,26 +1,30 @@
 'use client';
 
+import Image from "next/image";
 import { Card, CardContent, CardTitle } from "@/components/ui/card";
 import { InfoModal } from "@/components/InfoModal";
-import { RoundwormIcon } from "@/components/icons/RoundwormIcon";
-import { WhipwormIcon } from "@/components/icons/WhipwormIcon";
-import { HookwormIcon } from "@/components/icons/HookwormIcon";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
+
+const roundwormImage = PlaceHolderImages.find(img => img.id === 'roundworm');
+const whipwormImage = PlaceHolderImages.find(img => img.id === 'whipworm');
+const hookwormImage = PlaceHolderImages.find(img => img.id === 'hookworm');
+
 
 const wormTypes = [
     {
-        icon: <RoundwormIcon className="h-16 w-16 text-primary" />,
+        image: roundwormImage,
         name: "Cacing Gelang (Ascaris)",
         modalTitle: "Si Cacing Gelang",
         modalContent: "Ini cacing yang paling umum. Bentuknya seperti gelang dan bisa tumbuh besar di dalam usus."
     },
     {
-        icon: <WhipwormIcon className="h-16 w-16 text-primary" />,
+        image: whipwormImage,
         name: "Cacing Cambuk (Trichuris)",
         modalTitle: "Si Cacing Cambuk",
         modalContent: "Bentuknya unik seperti cambuk. Cacing ini hidup di usus besar dan bisa bikin sakit perut hebat."
     },
     {
-        icon: <HookwormIcon className="h-16 w-16 text-primary" />,
+        image: hookwormImage,
         name: "Cacing Tambang (Ancylostoma)",
         modalTitle: "Si Cacing Tambang",
         modalContent: "Cacing ini yang bisa masuk lewat kulit kaki! Mereka 'mengait' di usus dan menyedot darah."
@@ -40,9 +44,18 @@ export default function Scene4() {
                         key={index}
                         trigger={
                             <Card className="w-full cursor-pointer hover:bg-accent/50 hover:scale-105 transition-transform duration-300 border-4 border-white shadow-lg h-full">
-                                <CardContent className="p-6 flex flex-col items-center justify-center gap-4 h-full">
-                                    {worm.icon}
-                                    <CardTitle className="text-xl font-bold text-foreground">{worm.name}</CardTitle>
+                                <CardContent className="p-6 flex flex-col items-center justify-start gap-4 h-full">
+                                    {worm.image && (
+                                        <Image
+                                            src={worm.image.imageUrl}
+                                            alt={worm.name}
+                                            width={200}
+                                            height={200}
+                                            className="rounded-lg object-cover aspect-square"
+                                            data-ai-hint={worm.image.imageHint}
+                                        />
+                                    )}
+                                    <CardTitle className="text-xl font-bold text-foreground mt-auto">{worm.name}</CardTitle>
                                 </CardContent>
                             </Card>
                         }
