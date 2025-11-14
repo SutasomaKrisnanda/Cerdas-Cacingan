@@ -55,10 +55,9 @@ export default function Home() {
   };
 
   return (
-    <main className="flex h-[100svh] w-screen flex-col items-center justify-center overflow-hidden bg-background p-4 md:p-8 relative">
-      <div key={scene} className="w-full h-full flex items-center justify-center animate-fade-in">
-        {renderScene(scene)}
-      </div>
+    <main className="flex min-h-[100svh] w-full flex-col items-center justify-center bg-background p-4 md:p-8 relative">      <div key={scene} className="w-full h-full flex items-center justify-center animate-fade-in">
+      {renderScene(scene)}
+    </div>
 
       {scene > 1 && scene < totalScenes && (
         <>
@@ -67,7 +66,7 @@ export default function Home() {
             variant="ghost"
             size="icon"
             aria-label="Kembali"
-            className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 rounded-full h-14 w-14 md:h-16 md:w-16 text-white bg-primary/80 hover:bg-primary shadow-lg"
+            className="fixed z-50 left-2 md:left-4 top-1/2 -translate-y-1/2 rounded-full h-14 w-14 md:h-16 md:w-16 text-white bg-primary/80 hover:bg-primary shadow-lg"
           >
             <ArrowLeftCircle className="h-10 w-10 md:h-12 md:w-12" />
           </Button>
@@ -76,7 +75,7 @@ export default function Home() {
             variant="ghost"
             size="icon"
             aria-label="Lanjut"
-            className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 rounded-full h-14 w-14 md:h-16 md:w-16 text-white bg-primary/80 hover:bg-primary shadow-lg"
+            className="fixed z-50 right-2 md:right-4 top-1/2 -translate-y-1/2 rounded-full h-14 w-14 md:h-16 md:w-16 text-white bg-primary/80 hover:bg-primary shadow-lg"
           >
             <ArrowRightCircle className="h-10 w-10 md:h-12 md:w-12" />
           </Button>
